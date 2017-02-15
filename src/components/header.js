@@ -1,9 +1,18 @@
+/**
+ * ヘッダー用の共通コンポーネント
+ */
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 
+//コンポーネントの内容を定義する
+//参考：ES2015(ES6)新構文：アロー関数(Arrow function)
+//引数propsでタイトル名を表示するように定義する
 const Header = (props) => {
+
+  //それぞれのStyle属性を分割して表示する
   const { textStyle, viewStyle } = styles;
 
+  //表示する要素を返す
   return (
     <View style={viewStyle}>
       <Text style={textStyle}>{props.headerText}</Text>
@@ -11,6 +20,7 @@ const Header = (props) => {
   );
 };
 
+//StyleSheet属性を使用せずに書くことも可能
 const styles = {
   viewStyle: {
     backgroundColor: '#F8F8F8',
@@ -29,4 +39,5 @@ const styles = {
   }
 };
 
+//
 export default Header;
