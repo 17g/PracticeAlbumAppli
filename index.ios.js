@@ -10,10 +10,14 @@ import { AppRegistry, View } from 'react-native';
 //Headerコンポーネントの部品を定義する
 import Header from './src/components/header';
 
+//AlbumListコンポーネントの部品を定義する
+import AlbumList from './src/components/AlbumList';
+
 //アプリ本体の見た目を定義する
 const App = () => (
   <View style={{ flex: 1 }}>
-    <Header headerText={'Albums'} />
+    <Header headerText={'石川県での写真一覧'} />
+    <AlbumList />
   </View>
  );
 
