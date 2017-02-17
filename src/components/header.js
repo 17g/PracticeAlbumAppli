@@ -20,7 +20,7 @@ const Header = (props) => {
   );
 };
 
-//StyleSheet属性を使用せずに書くことも可能
+//このコンポーネントのStyle定義
 const styles = {
   viewStyle: {
     backgroundColor: '#F9F9F9',
@@ -29,8 +29,8 @@ const styles = {
     height: 60,
     paddingTop: 15,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.4,
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.2,
     elevation: 2,
     position: 'relative'
   },
